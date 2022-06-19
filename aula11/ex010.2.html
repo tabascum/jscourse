@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nationality</title>
+</head>
+<body>
+    <h1>Nationality Check</h1>
+    You're from <input type="text" name="country" id="country"> !
+    <input type="button" value="Check" onclick="conf()">
+    <div id="res"></div>
+
+    <script>
+        function conf() {
+            var country = window.document.querySelector('input#country')
+            var res = window.document.querySelector('div#res')
+            var pais = String(country.value)
+
+            res.innerHTML =`<p>Your motherland is ${pais}!</p>`
+
+            if (pais == 'France') {
+                res.innerHTML +=`<p>Bienvenu chez vous!</p>`
+            } else {
+                res.innerHTML += `<p>Hey y'all, welcome!</p>`
+            }
+        }
+    </script>
+
+</body>
+</html>

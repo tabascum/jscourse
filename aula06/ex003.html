@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables 2</title>
+    <style>
+        body {
+            background-color: #6161f8;
+            color: #ffffff; /*comentário CSS*/
+            font: normal 20px Arial;
+        }
+        h1 {
+        color: #e9e937;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <!---Comentario HTML--->
+    <p>Já me livrei da maldição!</p>
+    <script>
+
+        var n1 = Number(window.prompt('Digita um número: ')); //string
+        var n2 = Number(window.prompt('Digita outro número: ')); //string
+        var s = n1 + n2
+       // window.alert('A soma dos valores é' + s) //concatenação
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // template string
+
+        // (number + number) para adição
+        // (string + string) para concatenação
+
+        // Conversão
+        
+        // Number.parseInt para número inteiro
+        // Number.parseFloat para número real/decimal
+        // Number para qualquer número
+        // String() ou toString() para string
+        // .lenght para quantos caracteres a string tem
+        // .toUpperCase() tudo para maiúsculas
+        // .toLowerCase() tudo para minúsculas
+
+    </script>
+</body>
+</html>

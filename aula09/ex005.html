@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM First steps</title>
+    <style>
+        body {
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM : o início</h1>
+    <p>Aqui entra o resultado</p>
+    <p>Aprender a usar <strong>DOM</strong> em Javascript.</p>
+    <div id="msg">Clica em mim</div>
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1] //selecciona o primeiro paragrafo que aparece no documento.
+        /*
+        var d = window.document.getElementById('msg') 
+        d.style.backgroud = 'green'
+        d.innerText = 'Estou aguardando...'
+        */
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'blue'
+        //sempre que é selector class . e selector id #
+        
+       
+    </script>
+
+</body>
+</html>

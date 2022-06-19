@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        body {
+            background: #ffeeff;
+            color: #000;
+            font: normal 18pt 'Roboto'; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="date">Today is </div>
+    <div id="time">and current time is</div>
+
+    <script>
+        var now = new Date()
+        var weekDay = now.getDay()
+        var answer = document.getElementById('date')
+     
+        switch(weekDay) {
+            case 0:
+                answer.innerHTML+=(`Sunday`)
+                break
+            case 1:
+                answer.innerHTML+=(`Monday`)
+                break
+            case 2:
+                answer.innerHTML+=(`Tuesday`)
+                break
+            case 3:
+                answer.innerHTML+=(`Wednesday`)
+                break
+            case 4:
+                answer.innerHTML+=(`Thursday`)
+                break
+            case 5:
+                answer.innerHTML+=(`Friday`)
+                break
+            case 6:
+                answer.innerHTML+=(`Saturday`)
+            default:
+                answer.innerHTML+=(`[ERROR] Invalid Date`)
+                break
+        }
+
+        var time = now.getHours()
+        var minutes = now.getMinutes()
+        var hour = document.getElementById('time')
+
+        hour.innerHTML = (`It's ${time} hours and ${minutes} minutes`)
+      
+
+    </script>
+    
+</body>
+</html>

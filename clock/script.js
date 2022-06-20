@@ -1,9 +1,9 @@
 function load() {
-var msg = document.getElementById('msg')
-var img = document.getElementById('image')
-var date = new Date()
-var hour = date.getHours()
-var minute = date.getMinutes()
+let msg = document.getElementById('msg')
+let img = document.getElementById('image')
+let date = new Date()
+let hour = date.getHours()
+let minute = date.getMinutes()
 msg.innerHTML = `Current time is ${hour} hours and ${minute} minutes.`
     if (hour >= 0 && hour < 12) {
         //Bom dia 

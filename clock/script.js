@@ -2,7 +2,7 @@ function load() {
 var msg = document.getElementById('msg')
 var img = document.getElementById('image')
 var date = new Date()
-var hour = 20
+var hour = date.getHours()
 var minute = date.getMinutes()
 msg.innerHTML = `Current time is ${hour} hours and ${minute} minutes.`
     if (hour >= 0 && hour < 12) {
